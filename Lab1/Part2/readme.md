@@ -5,6 +5,9 @@
 Logisim 4 bit 2 to 1 mux
 
 
+<img width="241" height="289" alt="Part3TT" src="https://github.com/user-attachments/assets/3cd57d09-5f6f-469b-ba0e-77e8004d9fa2" />
+
+
 # Implementation
 <img width="300" height="685" alt="Part2_exp2" src="https://github.com/user-attachments/assets/01835174-a327-41c1-8a89-d202c4ef9149" />
 
