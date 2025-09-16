@@ -11,8 +11,9 @@
 
 We should expect there to be exactly four logic elements used just as shown.
 
+<img width= "360" height= "400" alt="part3_exp" src="https://github.com/user-attachments/assets/0e9700e8-bf50-4faa-b036-6ec1a8e44b51" />
 
 
 # Experiment
 
-![part3_exp](https://github.com/user-attachments/assets/571f1a1d-ca1e-47f5-bf3c-6b7576e0e3dc)
+
