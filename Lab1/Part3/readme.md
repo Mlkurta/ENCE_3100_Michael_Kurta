@@ -1,4 +1,4 @@
-# 5 to 1 multiplexer
+## 5 to 1 Multiplexer
 
 # Logisim
 
