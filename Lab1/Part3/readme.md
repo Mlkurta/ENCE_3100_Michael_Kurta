@@ -6,6 +6,9 @@
 
 5 to 1 Multiplexer requires 3 select inputs.
 
+<img width="200" height="376" alt="flowsummarypart3" src="https://github.com/user-attachments/assets/9f8f22ee-c0f1-48e5-be04-17a575082143" />
+
+
 
 # Experiment
 
