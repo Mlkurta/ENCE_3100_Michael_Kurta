@@ -1,5 +1,5 @@
 
-<img width="498" height="685" alt="Part2ls2" src="https://github.com/user-attachments/assets/3f743891-5bdb-4f96-90fc-303f43773e11" />
+<img width="300" height="685" alt="Part2ls2" src="https://github.com/user-attachments/assets/3f743891-5bdb-4f96-90fc-303f43773e11" />
 
 Logisim 4 bit 2 to 1 mux
 
