@@ -43,7 +43,7 @@ Also, an OR gate is used to allow two ways of operating the SEL pin on the multi
 
 <img width="1000" height="908" alt="7BCDLs" src="https://github.com/user-attachments/assets/c1634caa-17f7-4879-a2ef-51d1191bec3b" />
 
-Circuit A 
+Circuit A provides the required output bits to the muxes when the sum of the two values is greater than 9.
 
 ![IMG_7499](https://github.com/user-attachments/assets/70157944-532c-4d0d-9c17-fc9aef58dc42)
 
