@@ -6,6 +6,8 @@
 
 ## Four Bit Ripple Carry Adder
 
+In this next experiment, we will use the LEDs above switches 0-3 to indicate 4-bit binary.
+
 <img width="700" height="647" alt="part3LStt" src="https://github.com/user-attachments/assets/c761fa33-f4aa-4fe8-91c4-f5b5827bcd1a" />
 
 Logisim circuit with truth table for a 1-bit full adder.  If we connect the carry out of the first bit to the carry in of the second, and so on, we now have a 4-bit ripply-carry adder.
