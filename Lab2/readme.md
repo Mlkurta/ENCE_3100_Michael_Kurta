@@ -1,10 +1,10 @@
 
-## Four Bit 2-digit BCD display
+## Part II: Four Bit 2-digit BCD display
 
 ![4bit_2digit](https://github.com/user-attachments/assets/f99ad875-e907-484e-b634-bbe7bd48c5e2)
 
 
-## Four Bit Ripple Carry Adder
+## Part III: Four Bit Ripple Carry Adder
 
 In this next experiment, we will use the LEDs above switches 0-3 to indicate 4-bit binary.
 
@@ -29,3 +29,12 @@ To test the full adder, switches a0 and a1 are '1' (rightmost switches) as well 
 ![FA1](https://github.com/user-attachments/assets/83bb8e77-5dff-4e5d-a76f-96a93e379031)
 
 When the carry in switch is flipped to a '1', the carry signal propogates and LED 3 is lit.
+
+
+## Part IV: Four Bit adder with 2-digit BCD 
+In this experiment, modification of the Circuit_A logic is required, such that the maximum value displayed is 19. This information comes from the four bit sum and the carry out from the adder.
+
+
+<img width="1000" height="908" alt="7BCDLs" src="https://github.com/user-attachments/assets/c1634caa-17f7-4879-a2ef-51d1191bec3b" />
+
+
