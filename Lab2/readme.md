@@ -19,6 +19,7 @@ Logisim circuit with truth table for a 1-bit full adder.  If we connect the carr
 
 
 <img width="600" height="721" alt="4bitFAls" src="https://github.com/user-attachments/assets/5f207b04-f41a-4771-8557-828d7ab4cba5" />
+
 The outputs of this adder map directly to the LED by bit position. LED9 lights up when a value greater than 9 is the output of the adder.
 
 
