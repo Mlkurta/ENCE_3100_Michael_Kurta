@@ -44,6 +44,9 @@ When the carry in switch is flipped to a '1', the carry signal propogates and LE
 ## Part IV: Four Bit adder with 2-digit BCD 
 In this experiment, modification of the Circuit_A logic is required, such that the maximum value displayed is 19. This information comes from the four bit sum and the carry out from the adder.
 
+<img width="750" height="684" alt="CircuitA_2" src="https://github.com/user-attachments/assets/6b28205e-823a-4d9e-be63-f7ca1b34dfc5" />
+
+
 Also, an OR gate is used to allow two ways of operating the SEL pin on the multiplexers: The output of the comparator OR the cout from the adder. The output of the comparator activates at values 10-15. At 16 and greater, the 4-bit adder value overflows. 
 
 
