@@ -1,3 +1,9 @@
+## Part I: Binary to 7 segment display
+
+The first four switches represent a binary number, which is displayed via one digit:
+
+![IMG_7501](https://github.com/user-attachments/assets/723cbd19-2a8a-478d-a4c3-669cd0f99f64)
+
 
 ## Part II: Four Bit 2-digit BCD display
 
