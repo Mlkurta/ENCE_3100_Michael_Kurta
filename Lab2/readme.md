@@ -1,4 +1,7 @@
 
+![4bit_2digit](https://github.com/user-attachments/assets/f99ad875-e907-484e-b634-bbe7bd48c5e2)
+
+
 ## Four Bit Ripple Carry Adder
 
 <img width="700" height="647" alt="part3LStt" src="https://github.com/user-attachments/assets/c761fa33-f4aa-4fe8-91c4-f5b5827bcd1a" />
