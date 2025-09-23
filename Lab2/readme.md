@@ -18,6 +18,8 @@ Logisim circuit with truth table for a 1-bit full adder.  If we connect the carr
 
 
 
+<img width="889" height="721" alt="4bitFAls" src="https://github.com/user-attachments/assets/5f207b04-f41a-4771-8557-828d7ab4cba5" />
+
 
 
 
