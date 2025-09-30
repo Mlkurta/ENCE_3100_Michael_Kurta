@@ -67,6 +67,14 @@ RTL view of the latch network. Notice how it instantiated some additional Flip F
 
 Timing Diagram. See if you can follow along with the animation :P
 
+![Part4_1](https://github.com/user-attachments/assets/6facf6d6-5f8a-4b12-b8b0-ee6dd38869b9)
+
+![videotogif](https://github.com/user-attachments/assets/25376360-3f3e-49bb-90f1-5a1ac7d680fb)
+
+
+
+
+
 
 
 
