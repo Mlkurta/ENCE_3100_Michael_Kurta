@@ -6,10 +6,6 @@
 
 Logisim circuit of a gated SR latch
 
-
-
-
-
-
-
 <img width="600" height="435" alt="gatedsrlatch" src="https://github.com/user-attachments/assets/e57dec42-2d6f-4f4b-80ca-208395d16949" />
+
+RTL view 
