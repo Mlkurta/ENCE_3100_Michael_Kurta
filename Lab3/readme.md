@@ -1,8 +1,9 @@
-## Lab 3
+# Lab 3
 
-# Part 1, Gated SR Latch
+## Part 1, Gated SR Latch
 
 <img width="634" height="273" alt="gatedsrlatchls" src="https://github.com/user-attachments/assets/bafc36e0-386a-41ad-9fef-89bb23ddbf73" />
+
 Logisim circuit of a gated SR latch
 
 
