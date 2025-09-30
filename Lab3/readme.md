@@ -2,6 +2,14 @@
 
 ## Part 1, Gated SR Latch
 
+| CLK | S | R |   Q   |   ~Q  |
+|-----|---|---|-------|-------|
+| 0   | X | X | latch | latch |
+| 1   | 0 | 0 | latch | latch |
+| 1   | 0 | 1 |   0   |   1   |
+| 1   | 1 | 0 |   1   |   0   |
+| 1   | 1 | 1 |   0   |   0   |
+
 <img width="434" height="273" alt="gatedsrlatchls" src="https://github.com/user-attachments/assets/bafc36e0-386a-41ad-9fef-89bb23ddbf73" />
 
 Logisim circuit of a gated SR latch
@@ -53,7 +61,7 @@ I've implemented both the 50 MHz clock and the switch as the clock. I took a pic
 When referencing the Verilog RTL, this one is the "latch_ff.v" file.
 This demo lights six different LEDs (more LEDs are usually more fun), two (Q and Q') from each latch.
 
-I didn't bother with a logisim implementation with how particulat it could be. 
+
 
 <img width="472" height="446" alt="pt4 circuit" src="https://github.com/user-attachments/assets/3e09f210-9de7-4f32-a45c-7b0286170a67" />
 
