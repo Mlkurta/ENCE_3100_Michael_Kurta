@@ -63,6 +63,14 @@ Diagram of the latch / FF network
 
 RTL view of the latch network. Notice how it instantiated some additional Flip Flops for the respective compliment (prime) signals.
 
+<img width="435" height="434" alt="pt4_timingh" src="https://github.com/user-attachments/assets/608bf895-1d90-464e-aa16-891be05b7a18" />
+
+Timing Diagram. See if you can follow along with the animation :P
+
+
+
+
+
 
 
 
