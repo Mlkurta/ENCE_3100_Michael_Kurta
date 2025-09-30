@@ -28,8 +28,6 @@ Truth table
 
 Circuit diagram in logisim. I haven't found a way to get rid of the indeterminite behavior warnings.
 
-![rs](https://github.com/user-attachments/assets/bf487fe9-b35f-4101-8dac-4a48fbc3bff1)
-
 
 ## Part 3, Master Slave Flip Flop
 
