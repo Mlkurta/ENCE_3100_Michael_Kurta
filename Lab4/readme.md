@@ -13,6 +13,9 @@ A T-Flip Flop is a particular type of flip flop where every time a clock is trig
 are all a logic '1'. It's created by using a D-flip flop and an AND gate per bit. Each T input after the first bit is ANDed with the previous output.
 
 
+<img width="750" height="550" alt="Switch_count" src="https://github.com/user-attachments/assets/cf71b46d-2f3f-4c82-94c8-e5b8403fb471" />
+
+
 ## Part II, 16 bit counter
 
 This part takes the counter from part 1 and expands it to 16 bits. This time, the counter is supplied with a 
