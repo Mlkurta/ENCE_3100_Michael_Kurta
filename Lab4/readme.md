@@ -52,7 +52,7 @@ number. This is because in hex, the carry out comes after 15 (F) instead of 10.
 The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v) - this uses bit-shifting and adding to convert to
 a base 10 number.
 
-<img width="502" height="418" alt="functional diag" src="https://github.com/user-attachments/assets/04a492ed-0dda-43c7-bd56-34a234818ee2" />
+<img width="702" height="418" alt="functional diag" src="https://github.com/user-attachments/assets/04a492ed-0dda-43c7-bd56-34a234818ee2" />
 
 Block diagram of the BCD counter circuit.
 
