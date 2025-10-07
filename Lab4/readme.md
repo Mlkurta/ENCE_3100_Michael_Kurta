@@ -12,6 +12,12 @@ This experiment demonstrates an 8-bit synchronous counter made from T-flip flops
 
 ## Part II, 16 bit counter
 
+This part takes the counter from part 1 and expands it to 16 bits. This time, the counter is supplied with a 
+1 millisecond timer module. The module reduces the tic rate from the clock's 50 Mhz down to 1,000 Hz (or period
+of 1 ms).
+
+![IMG_7534](https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320)
+
 
 ## Part III, LPM 8-bit hex counter
 
