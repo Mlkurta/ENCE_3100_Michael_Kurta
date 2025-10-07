@@ -16,7 +16,15 @@ This part takes the counter from part 1 and expands it to 16 bits. This time, th
 1 millisecond timer module. The module reduces the tic rate from the clock's 50 Mhz down to 1,000 Hz (or period
 of 1 ms).
 
+The easiest way to implement a 7-segment counter is through hexadecimal, or base 16. 
+In the next experiment, we'll use a binary to Binary Coded Decimal (BCD) converter to represent
+decimal numbers.
+
+
 <img width="450" height="613" alt="img_7534" src="https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320" />
+
+The device counts very fast, and overflows in around a minute with 4 hex digits -16 bits, max unsigned value of 2^16 - 1 = 65,535.
+The device counts to 60,000 in one minute.
 
 
 ## Part III, LPM 8-bit hex counter
