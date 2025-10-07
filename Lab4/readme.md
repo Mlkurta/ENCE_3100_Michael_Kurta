@@ -54,6 +54,7 @@ decimal numbers.
 If we want to make a digital clock just like any that you're familiar with, we'll have to create a BCD converter. 
 It's not just as easy as modifying the seg7decoder.v file to say any number greater than 10 is still the ones digit
 number. This is because in hex, the carry out comes after 15 (F) instead of 10.  
+
 The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v) - this uses bit-shifting and adding to convert to
 a base 10 number.
 
