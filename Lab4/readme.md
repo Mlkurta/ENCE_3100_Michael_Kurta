@@ -35,6 +35,11 @@ The device counts to 60,000 in one minute.
 Quartus has a an IP block to instantiate a counter, connect the clock, clear, and enable signals and receive a
 user-configurable bit width (set to 8 bits here).
 
+<img width="719" height="672" alt="image" src="https://github.com/user-attachments/assets/2d428ebb-d9d1-4cbc-a2f8-af152fb4535c" />
+
+RTL view of the LPM 8-bit counter.
+
+
 <img width="450" height="613" alt="hex_counter" src="https://github.com/user-attachments/assets/551298e2-78b5-456d-a01b-461edf9e42cc" />
 
 Notice that only 2 digits are used. Why do we only need 2 digits to represent a 2^8 - 1 = 255?  
@@ -54,8 +59,8 @@ a base 10 number.
 
 <img width="812" height="514" alt="RTL" src="https://github.com/user-attachments/assets/aefc4de9-5e43-41ee-b221-c74addd5dc10" />
 
-
-Block diagram of the BCD counter circuit.
+RTL view of the BCD counter circuit. Compare with the bloc diagram from part III: it's virtually the same circuit except for
+the binary to BCD converter and the counter is a RTL written one (not IP).
 
 
 <img width="450" height="613" alt="hex_counter" src="https://github.com/user-attachments/assets/8e967b24-0512-4abc-962f-5fcf726c21af" />
