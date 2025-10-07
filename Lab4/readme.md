@@ -23,7 +23,7 @@ decimal numbers.
 
 <img width="450" height="613" alt="img_7534" src="https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320" />
 
-The device counts very fast, and overflows in around a minute with 4 hex digits -16 bits, max unsigned value of 2^16 - 1 = 65,535.
+The device counts very fast, and overflows in around a minute with 4 hex digits -16 bits, max unsigned value of 2^16 - 1 = 65,535 (hex FFFF).
 The device counts to 60,000 in one minute.
 
 
