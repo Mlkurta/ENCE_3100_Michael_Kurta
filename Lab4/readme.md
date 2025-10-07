@@ -15,7 +15,7 @@ are all a logic '1'. It's created by using a D-flip flop and an AND gate per bit
 
 <img width="550" height="550" alt="Switch_count" src="https://github.com/user-attachments/assets/cf71b46d-2f3f-4c82-94c8-e5b8403fb471" />
 
-A hexadecimal counter with switches as the clock.
+A hexadecimal counter with switches as the inputs, to include the clock.
 
 
 ## Part II, 16 bit counter
