@@ -7,8 +7,10 @@ This experiment demonstrates an 8-bit synchronous counter made from T-flip flops
 
 <img width="750" height="550" alt="8_bit_tff" src="https://github.com/user-attachments/assets/0167b9f6-673e-4100-9e65-69af22cb9d62" />
 
+8 bit counter made from T-flip flops.
 
-4 bit counter
+A T-Flip Flop is a particular type of flip flop where every time a clock is triggered (rising edge in this case), it will toggle its output if both T and enable (and clr)
+are all a logic '1'. It's created by using a D-flip flop and an AND gate per bit. Each T input after the first bit is ANDed with the previous output.
 
 
 ## Part II, 16 bit counter
