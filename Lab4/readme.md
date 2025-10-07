@@ -17,6 +17,7 @@ This part takes the counter from part 1 and expands it to 16 bits. This time, th
 of 1 ms).
 
 ![IMG_7534](https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320)
+<img width="450" height="613" alt="img_7534" src="https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320" />
 
 
 ## Part III, LPM 8-bit hex counter
