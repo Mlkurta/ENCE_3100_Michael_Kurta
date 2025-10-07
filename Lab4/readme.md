@@ -41,12 +41,13 @@ The easiest way to implement a 7-segment counter is through hexadecimal, or base
 In the next experiment, we'll use a binary to Binary Coded Decimal (BCD) converter to represent
 decimal numbers.
 
-## Part 4, 8-bit BCD Counter
+## Part IV, 8-bit BCD Counter
 
 If we want to make a digital clock just like any that you're familiar with, we'll have to create a BCD converter. 
 It's not just as easy as modifying the seg7decoder.v file to say any number greater than 10 is still the ones digit
 number. This is because in hex, the carry out comes after 15 (F) instead of 10.  
-The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v)
+The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v) - this uses bit-shifting and adding to convert to
+a base 10 number.
 
-
+<img width="450" height="613" alt="hex_counter" src="https://github.com/user-attachments/assets/8e967b24-0512-4abc-962f-5fcf726c21af" />
 Now the device correctly counts to 255 before overflowing back to 0. 
