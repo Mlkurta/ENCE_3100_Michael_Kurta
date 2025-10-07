@@ -50,4 +50,5 @@ The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v) - this use
 a base 10 number.
 
 <img width="450" height="613" alt="hex_counter" src="https://github.com/user-attachments/assets/8e967b24-0512-4abc-962f-5fcf726c21af" />
+
 Now the device correctly counts to 255 before overflowing back to 0. 
