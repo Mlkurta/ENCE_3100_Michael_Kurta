@@ -5,7 +5,7 @@
 
 This experiment demonstrates an 8-bit synchronous counter made from T-flip flops.
 
-<img width="450" height="559" alt="8_bit_tff" src="https://github.com/user-attachments/assets/f0067fb0-ad91-4ec5-9bb6-2b7c693df4dd" />
+<img width="700" height="559" alt="8_bit_tff" src="https://github.com/user-attachments/assets/f0067fb0-ad91-4ec5-9bb6-2b7c693df4dd" />
 
 
 4 bit counter
