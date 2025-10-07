@@ -28,6 +28,9 @@ The easiest way to implement a 7-segment counter is through hexadecimal, or base
 In the next experiment, we'll use a binary to Binary Coded Decimal (BCD) converter to represent
 decimal numbers.
 
+<img width="815" height="733" alt="part1_rtl" src="https://github.com/user-attachments/assets/47ba4534-6b57-4a0d-92da-56eebd9aba05" />
+
+RTL view of the 16-bit counter.
 
 <img width="450" height="613" alt="img_7534" src="https://github.com/user-attachments/assets/cfc41cb9-841e-4af6-b649-42389da9a320" />
 
