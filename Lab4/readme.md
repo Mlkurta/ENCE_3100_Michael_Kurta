@@ -14,7 +14,7 @@ This experiment demonstrates an 8-bit synchronous counter made from T-flip flops
 
 This part takes the counter from part 1 and expands it to 16 bits. This time, the counter is supplied with a 
 1 millisecond timer module. The module reduces the tic rate from the clock's 50 Mhz down to 1,000 Hz (or period
-of 1 ms).
+of 1 ms). The 1 ms timer module outputs 
 
 The easiest way to implement a 7-segment counter is through hexadecimal, or base 16. 
 In the next experiment, we'll use a binary to Binary Coded Decimal (BCD) converter to represent
@@ -40,3 +40,13 @@ This is because we normally use a base 10 numbering system, which is what we're 
 The easiest way to implement a 7-segment counter is through hexadecimal, or base 16. 
 In the next experiment, we'll use a binary to Binary Coded Decimal (BCD) converter to represent
 decimal numbers.
+
+## Part 4, 8-bit BCD Counter
+
+If we want to make a digital clock just like any that you're familiar with, we'll have to create a BCD converter. 
+It's not just as easy as modifying the seg7decoder.v file to say any number greater than 10 is still the ones digit
+number. This is because in hex, the carry out comes after 15 (F) instead of 10.  
+The double dabble algorithm is one such tool (ref. bin_to_bcd_3dig.v)
+
+
+Now the device correctly counts to 255 before overflowing back to 0. 
