@@ -28,10 +28,25 @@ Looking at the RTL view, is there are two adders instantiated, one designed to s
 and subtraction are computed at the same time. The multiplexer looks at the i_addsub signal and determines which value to output.
 
 
-## Part III: Multiplier Circuit
+## Part III: Multiplier Circuit (1 bit adders)
 
 The multiplier circuit works by use of an array multiplier, which uses several levels of cascading adders.
 
 <img width="1438" height="752" alt="image" src="https://github.com/user-attachments/assets/231aae93-ec75-41cc-b220-748edb057c9c" />
+
+
+## Part IV: Multiplier Circuit (8 bit adders)
+
+This 8x8 multiplier works by using and array of 8-bit adders to carry out the multiplication and output a 16 bit value. The number is converted to BCD and displayed on the 7 segment decoders.
+
+<img width="894" height="771" alt="image" src="https://github.com/user-attachments/assets/81112287-2a1a-4953-a1b6-a9d553be5fcc" />
+
+Top module block diagram.
+
+
+<img width="2217" height="939" alt="image" src="https://github.com/user-attachments/assets/bd1822b2-8a03-4084-8a74-b5b72a70d116" />
+
+Multiplier RTL from arrayed 8 bit adders.
+
 
 
