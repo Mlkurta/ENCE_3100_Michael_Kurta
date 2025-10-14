@@ -34,6 +34,9 @@ The multiplier circuit works by use of an array multiplier, which uses several l
 
 <img width="1438" height="752" alt="image" src="https://github.com/user-attachments/assets/231aae93-ec75-41cc-b220-748edb057c9c" />
 
+<img width="738" height="752" alt="image" src="https://github.com/user-attachments/assets/6c1d8ed3-0583-460a-8133-7d94ae0ad349" />
+
+5 x 4 = 20. 
 
 ## Part IV: Multiplier Circuit (8 bit adders)
 
@@ -43,10 +46,13 @@ This 8x8 multiplier works by using and array of 8-bit adders to carry out the mu
 
 Top module block diagram.
 
-
 <img width="2217" height="939" alt="image" src="https://github.com/user-attachments/assets/bd1822b2-8a03-4084-8a74-b5b72a70d116" />
 
 Multiplier RTL from arrayed 8 bit adders.
+
+<img width="1117" height="939" alt="image" src="https://github.com/user-attachments/assets/dde0e0fc-fe76-460e-b4e2-a0ce9e12edf3" />
+
+
 
 
 
