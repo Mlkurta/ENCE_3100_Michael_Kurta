@@ -1,4 +1,4 @@
-# Lab 5: Adders, Subtractors and Multipliers
+ Lab 5: Adders, Subtractors and Multipliers
 
 ## Part I: Adder Circuit
 
@@ -50,8 +50,10 @@ Top module block diagram.
 
 Multiplier RTL from arrayed 8 bit adders.
 
-<img width="1117" height="939" alt="image" src="https://github.com/user-attachments/assets/dde0e0fc-fe76-460e-b4e2-a0ce9e12edf3" />
+<img width="817" height="939" alt="image" src="https://github.com/user-attachments/assets/36344049-9315-41a7-8c9e-a51a9564c715" />
 
+Since there aren't enough switches to input 16 bits, the B register is pre-loaded with a value of 7'd100. So every update of the switches and clock multiplies the current 
+value with 100 and displays the result. 
 
 
 
