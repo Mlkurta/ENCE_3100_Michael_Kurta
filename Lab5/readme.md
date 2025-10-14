@@ -50,6 +50,9 @@ Top module block diagram.
 
 Multiplier RTL from arrayed 8 bit adders.
 
+It takes two rising edges of the clock to complete the calculation. In the gif below, I started the sequnce by flipping the 2^3 (8) switch, pressing the clock key, and then flipping the 2^5 (32)
+switch.  When starting at 0, this sequence will still display a '0'. When the gif starts, the key is pressed two times, and this shows the 2^3 * 100 = 800,  + (2^5 * 100) = 40000.
+
 <img width="817" height="939" alt="image" src="https://github.com/user-attachments/assets/36344049-9315-41a7-8c9e-a51a9564c715" />
 
 Since there aren't enough switches to input 16 bits, the B register is pre-loaded with a value of 7'd100. So every update of the switches and clock multiplies the current 
