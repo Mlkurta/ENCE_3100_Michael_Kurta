@@ -14,7 +14,7 @@ RTL diagram of accumulator circuit.
 From the diagram, it's simply an adder with the inputs and outputs being saved in a register. 
 
 
-On the board, you set the switches for how much you want to add.  It takes two presses of the 'clock' to compute the addition, but additional presses accumulate the added value.
+On the board, the switches can be set to detemine how much to add.  It takes two presses of the 'clock' to compute the addition, but additional presses accumulate the added value.
 It continues to add with every button press until it overflows (> 255). 
 
 
@@ -25,7 +25,13 @@ The subtractor circuit works identically to the adder, just with an added functi
 <img width="738" height="880" alt="image" src="https://github.com/user-attachments/assets/c0165eaa-9f0d-43f7-a94c-19552f8ec89f" />
 
 Looking at the RTL view, is there are two adders instantiated, one designed to subtract B from A if i_addsub is a '1'. So really both the addition
-and subtraction are computed every time either reg_A or reg_B changes + a rising edge, it's that the multiplexer determines which value is passed on and saved in the register.
+and subtraction are computed at the same time. The multiplexer looks at the i_addsub signal and determines which value to output.
 
 
-## Part II: 
+## Part III: Multiplier Circuit
+
+The multiplier circuit works by use of an array multiplier, which uses several levels of cascading adders.
+
+<img width="638" height="752" alt="image" src="https://github.com/user-attachments/assets/231aae93-ec75-41cc-b220-748edb057c9c" />
+
+
