@@ -32,6 +32,6 @@ and subtraction are computed at the same time. The multiplexer looks at the i_ad
 
 The multiplier circuit works by use of an array multiplier, which uses several levels of cascading adders.
 
-<img width="638" height="752" alt="image" src="https://github.com/user-attachments/assets/231aae93-ec75-41cc-b220-748edb057c9c" />
+<img width="1438" height="752" alt="image" src="https://github.com/user-attachments/assets/231aae93-ec75-41cc-b220-748edb057c9c" />
 
 
