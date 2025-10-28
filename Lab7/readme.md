@@ -50,3 +50,5 @@ This is a module which re-routes the signals to the 7 segment format using combi
 certain way, and the normal binary values for 'digits' are not compatible.
 
 ![operation](https://github.com/user-attachments/assets/a69128be-1065-4bc7-8429-fe06aed06f15)
+
+Final note about the files: The async_transmitter.v contains both the TX and RX modules.
