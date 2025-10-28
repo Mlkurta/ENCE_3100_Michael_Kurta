@@ -1,11 +1,11 @@
 module FSM_Hello(
     input               i_clk,
     input               i_reset,
-    input       [7:0]   i_data,     // raw UART byte
-    input               i_ready,    // 1-cycle strobe when i_data/i_decoded valid
-    input               i_eoc,      // timer expired (3s)
-    output reg          o_convert,  // 1-cycle pulse when first 'h' is seen
-    output reg  [7:0]   o_hex       // what to show on 7-seg
+    input       [7:0]   i_data,     
+    input               i_ready,    
+    input               i_eoc,      
+    output reg          o_convert,  
+    output reg  [7:0]   o_hex       
 );
 
     // State encoding
@@ -21,15 +21,12 @@ module FSM_Hello(
     // Hold the display value we want to show
     reg [7:0] disp_q, disp_d;
 
-    // Convenient compares for ASCII
     wire is_h = (i_data == 8'h68);  // 'h'
     wire is_e = (i_data == 8'h65);  // 'e'
     wire is_l = (i_data == 8'h6C);  // 'l'
     wire is_o = (i_data == 8'h6F);  // 'o'
 
-    //========================
-    // 1) Next-state logic
-    //========================
+    // 1. State Switch (Combinational) 
     always @(*) begin
         next_state = state; // default: hold
 
@@ -55,6 +52,8 @@ module FSM_Hello(
         endcase
     end
 
+		
+		// 2. Display Mux (Combinational) 
     always @(*) begin
         disp_d = disp_q; // default hold
 
@@ -78,9 +77,7 @@ module FSM_Hello(
 
     end
 
-    //========================
-    // 3) Sequential: state, display reg, and convert pulse
-    //========================
+    // 2. State Register (Sequential)
     always @(posedge i_clk) begin
         if (i_reset || i_eoc) begin
             state     <= S;
