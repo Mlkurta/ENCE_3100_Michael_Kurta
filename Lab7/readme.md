@@ -13,9 +13,13 @@ the sequence is pressed ('e'). The same sequence happends with every new letter 
 ('l' and 'l2') states. When the one shot timer sends a signal to the FSM_Hello module, the display resets and reverts back to the 's' state. This is similar to something on an ATM. If you walk away for a while, the 
 machine should, for security purposes, assume the customer has left inadvertently and lockout / reset the process.
 
+Lastly, the machine can be reset using one of the slide switches.
+
 ## Block Diagram
 
 <img width="500" height="607" alt="lfsr_parallel" src="https://github.com/user-attachments/assets/2a5dfaf4-1701-455d-bca6-edf73b3339f8" />
 
 This project is a challenge in mixing synchronous with asynchronous logic, and at least for me, timing of the data ready signal.
+
+## Async Receiver - 
 
