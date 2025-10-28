@@ -19,6 +19,9 @@ Lastly, the machine can be reset using one of the slide switches.
 
 <img width="500" height="607" alt="lfsr_parallel" src="https://github.com/user-attachments/assets/2a5dfaf4-1701-455d-bca6-edf73b3339f8" />
 
+<img width="600" height="796" alt="quartus_bd" src="https://github.com/user-attachments/assets/23b0705d-9d84-4e34-846d-6a417260ac73" />
+
+
 This project is a challenge in mixing synchronous with asynchronous logic, and at least for me, timing of the data ready signal.
 
 ## Async Receiver 
