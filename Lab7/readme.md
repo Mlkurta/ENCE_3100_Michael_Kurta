@@ -21,5 +21,29 @@ Lastly, the machine can be reset using one of the slide switches.
 
 This project is a challenge in mixing synchronous with asynchronous logic, and at least for me, timing of the data ready signal.
 
-## Async Receiver - 
+## Async Receiver 
+This module uses a clock, but detects the UART input asynchronously. It passes its own data and ready signals to a Char synchronizer.
 
+## Char synchronizer
+This module synchronizes the data and ready signals so the FSM_Hello module is also synchronized. I tried omitting this module, but it didn't work.
+However, at the time it was likely due to other errors. It also forwards the data to the 8 LEDs on the dev board. The display was helpful for
+debugging the operation since you can validate what letters were pressed, (via ASCII table / binary conversion).
+
+## FSM Hello
+This module is the Finite State Machine (FSM) module of the project. It has states S, H, E, L, L2, and O. It reads every character that enters,
+and determines the next course of action. As said above, when it enters the 'H' state, it begins a 3 second timer to finish typing hello. When
+the module receives an end of conversion signal (timer end) OR the slide switch #9 is placed high, it resets to the S state.
+
+## 3 Second Timer
+This detects a rising edge (not just '1') of the timer_start signal from FSM_Hello, it begins counting to 150,000,000.
+It counts to 50 million in a second, returns the timer_end signal upon completion.
+
+## Async Transmitter
+This module outputs a serial signal (instead of parallel lanes) to the UART to USB converter. If you're using a serial terminal like tera term or
+RealTerm, you can see the letters output on the terminal, since its configured in a "loopback" way (UART TX to FPGA RX and vise versa).
+
+## Char to 7 segment
+This is a module which re-routes the signals to the 7 segment format using combinational logic. A seven segment display needs to be displayed a 
+certain way, and the normal binary values for 'digits' are not compatible.
+
+![operation](https://github.com/user-attachments/assets/a69128be-1065-4bc7-8429-fe06aed06f15)
