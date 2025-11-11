@@ -2,10 +2,11 @@
 # Lab 8, Simple Microprocessor
 
 ## Block Diagram
-<img width="2234" height="1243" alt="image" src="https://github.com/user-attachments/assets/106def44-4c82-4795-8c6a-4129d37a6d1d" />
 
 
 ## RTL View
+
+<img width="2234" height="1243" alt="image" src="https://github.com/user-attachments/assets/106def44-4c82-4795-8c6a-4129d37a6d1d" />
 
 ## Accumulator A
 The 'A' Accumulator is a register that will receive numerical data to pass to the Arithmetic unit and then accumulate the total through the IB_BUS It also outputs this result on the IB_BUS via a tri-state buffer. The tri-state buffer allows multiple modules to push information onto the bus as needed, and then go to a high impedence, or high-Z state when not to avoid bus conflits. There is a AluA output which displays the accumulator's current value. The control unit determines when the module is both enabled and latched.
