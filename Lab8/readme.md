@@ -2,6 +2,8 @@
 # Lab 8, Simple Microprocessor
 
 ## Block Diagram
+<img width="2234" height="1243" alt="image" src="https://github.com/user-attachments/assets/106def44-4c82-4795-8c6a-4129d37a6d1d" />
+
 
 ## RTL View
 
