@@ -25,7 +25,7 @@ Lastly, the machine can be reset using one of the slide switches.
 This project is a challenge in mixing synchronous with asynchronous logic, and at least for me, timing of the data ready signal.
 
 ## Async Receiver 
-This module uses a clock, but detects the UART input asynchronously. It passes its own data and ready signals to a Char synchronizer.
+This module uses a clock, but detects the UART input asynchronously. The module then makes the signal synchronous by registering the data, and then emitting an enable pulse when the data is ready to be read by the Finite State Machine (FSM) module. WIthout this, data would still go to the FSM, but it would not be read correctly.
 
 ## Char synchronizer
 This module synchronizes the data and ready signals so the FSM_Hello module is also synchronized. I tried omitting this module, but it didn't work.
@@ -34,15 +34,14 @@ debugging the operation since you can validate what letters were pressed, (via A
 
 ## FSM Hello
 This module is the Finite State Machine (FSM) module of the project. It has states S, H, E, L, L2, and O. It reads every character that enters,
-and determines the next course of action. As said above, when it enters the 'H' state, it begins a 3 second timer to finish typing hello. When
-the module receives an end of conversion signal (timer end) OR the slide switch #9 is placed high, it resets to the S state.
+and determines the next course of action. As said above, when it enters the 'H' state, it begins a 3 second timer to finish typing hello. If the user does not enter the full message "Hello" within 3 seconds, the message counter will reset to its starting state. As the user types, any letters will display on the 7 segment display. If the user presses 'h', the letters will now display only if the next corresponding letter (i.e. 'e' after 'h') if that next letter is pressed.
 
 ## 3 Second Timer
 This detects a rising edge (not just '1') of the timer_start signal from FSM_Hello, it begins counting to 150,000,000.
 It counts to 50 million in a second, returns the timer_end signal upon completion.
 
 ## Async Transmitter
-This module outputs a serial signal (instead of parallel lanes) to the UART to USB converter. If you're using a serial terminal like tera term or
+This module provides feedback to the user's key presses by transmitting the output back to a PC. It's an "asynchronous transmitter" as it does not require a ready signal to receive data. It outputs a serial signal (instead of parallel lanes) to the UART to USB converter. If you're using a serial terminal like tera term or
 RealTerm, you can see the letters output on the terminal, since its configured in a "loopback" way (UART TX to FPGA RX and vise versa).
 
 ## Char to 7 segment
