@@ -33,7 +33,14 @@ The in register allows the user to enter data to be added or subtracted via the 
 
 ## Instruction Register
 <img width="1528" height="889" alt="image" src="https://github.com/user-attachments/assets/9dfd4150-ba40-4c6d-a691-a777d36523a4" />
-
+| Instruction | Code |
+|-------------|------|
+|    NOP      | 0000 |
+|    ADD      | 0001 |
+|    SUB      | 0010 |
+|    OUT      | 0011 |
+|    IN       | 0100 |
+|    LDA      | 0101 |
 The instruction register is an intermidiary module between the ROM and the Finite State Machine. While the FSM decides how to operate the Accumulators, ALU and bus, the Instruction register parses what must be done from the ROM and outputs the action to the FSM.
 
 ## Program Memory (ROM)
