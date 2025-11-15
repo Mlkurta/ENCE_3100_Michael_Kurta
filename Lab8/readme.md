@@ -1,5 +1,6 @@
 
 # Lab 8, Simple Microprocessor
+![IMG_7620](https://github.com/user-attachments/assets/d8f4f9f3-cf64-4f25-a93c-00b33f47b884)
 
 ## Block Diagram
 
