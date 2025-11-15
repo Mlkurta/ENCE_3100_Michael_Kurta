@@ -72,4 +72,5 @@ The program counter synchronizes what memory addresses are read from the ROM. Si
 ## Finiste State Machine (FSM) Controller
 <img width="1304" height="1107" alt="image" src="https://github.com/user-attachments/assets/40347d4b-0c8c-4139-967a-7d6010cb319c" />
 
-The FSM Controller is the 'smart' module of this system. 
+The FSM Controller is the 'smart' module of this system. It directs the actions of the other submodules, such that the modules can properly coordinate when they contribute to the bus or go to a high-z state. This allows error-free data
+travel between modules. Every action takes four clock cycles, and thus four phases. These phases make up the four different states of the controller.
