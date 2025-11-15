@@ -15,7 +15,7 @@ The 'A' Accumulator is a register that will receive numerical data to pass to th
 The 'B' Accumulator is nearly identical to Accumulator A. It is a register which holds the value of the last input and adds any new incoming inputs. The control unit determines when the module is both enabled and latched.
 
 ## Arithmetic Logic Unit (ALU)
-The ALU performs addition and subtraction via the use of the inputs from Accumulators A and B. There is a 1-bit signal input "add_sub" which dictates whether the ALU will add (A+B) or subtract (A-B). When the system is not performing calculations, it goes to a high-z state.
+The ALU performs addition and subtraction via the use of the inputs from Accumulators A and B. There is a 1-bit signal input "add_sub" which dictates whether the ALU will add (A+B) or subtract (A-B). When the system is not performing calculations, it goes to a high-z state to allow other modules to contibute to the bus.
 
 ## Input Register
 The in register allows the user to enter data to be added or subtracted via the switches on the board. It recieves the data by reading the slide switches, and outputs this data onto the IB_BUS.
