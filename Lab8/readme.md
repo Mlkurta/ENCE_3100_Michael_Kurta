@@ -45,6 +45,14 @@ The in register allows the user to enter data to be added or subtracted via the 
 
 The instruction register is an intermidiary module between the ROM and the Finite State Machine. While the FSM decides how to operate the Accumulators, ALU and bus, the Instruction register parses what must be done from the ROM and outputs the action to the FSM.
 
+Commands: 
+NOP - Do nothing
+ADD - Add the contents of accumulator A to the contents of the variable to be summed.
+SUB - Sutract contents of accumulator A from the data given as the parameter.
+OUT - The contents of accumulator A is stored to the output port.
+IN  - THe content of the input port is transferred to Accumulator A
+LDA - (Load A) - The accumulator A is loaded with the value given as the parameter.
+
 ## Program Memory (ROM)
 <img width="1096" height="1220" alt="image" src="https://github.com/user-attachments/assets/e1872940-e694-4ec7-907c-8818d0dca17a" />
 
