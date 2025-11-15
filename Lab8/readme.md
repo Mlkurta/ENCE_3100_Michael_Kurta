@@ -4,9 +4,6 @@
 ![IMG_7620](https://github.com/user-attachments/assets/b388c463-bcdb-4a41-84e4-41c905e5b9ed)
 
 
-## Block Diagram
-
-
 ## RTL View
 
 <img width="2234" height="1243" alt="image" src="https://github.com/user-attachments/assets/106def44-4c82-4795-8c6a-4129d37a6d1d" />
