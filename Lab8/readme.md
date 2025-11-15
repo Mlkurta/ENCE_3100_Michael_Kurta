@@ -4,8 +4,8 @@
 ![VideoToGif_GIF (1)](https://github.com/user-attachments/assets/0f11235a-b077-4070-a3a3-1f114c227fbb)
 
 
-![IMG_7620](https://github.com/user-attachments/assets/b388c463-bcdb-4a41-84e4-41c905e5b9ed)
 
+<img width="834" height="1243" alt="image" src="https://github.com/user-attachments/assets/b388c463-bcdb-4a41-84e4-41c905e5b9ed" />
 
 ## RTL View
 
