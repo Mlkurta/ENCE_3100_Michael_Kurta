@@ -58,7 +58,7 @@ SUB - Sutract contents of accumulator A from the data given as the parameter.
 
 OUT - The contents of accumulator A is stored to the output port.
 
-IN  - THe content of the input port is transferred to Accumulator A
+IN  - The content of the input port is transferred to Accumulator A
 
 LDA - (Load A) - The accumulator A is loaded with the value given as the parameter.
 
@@ -66,6 +66,18 @@ LDA - (Load A) - The accumulator A is loaded with the value given as the paramet
 <img width="896" height="1220" alt="image" src="https://github.com/user-attachments/assets/e1872940-e694-4ec7-907c-8818d0dca17a" />
 
 The program memory stores all of the instructions for the processor. In the real world, this could be a bootloader, or startup sequence, or user controlled actions.
+
+The full sequence is only 8 instructions total:
+
+1: 0x55,  LDA   5    # Load 5 into accumulator A
+2: 0x12,  ADD   2    # Add 2 to accumulator A
+3: 0x30,  OUT   0    # Display the contents of accumulator A to the output register
+4: 0x28,  SUB   8    # Subtract the data in accumulator A from 8
+5: 0x30,  OUT   0    # Display the contents of accumulator A to the output register
+6: 0x40,  IN SW[3:0] # The content of the input port is transferred to Accumulator A
+7: 0x13   ADD   3    # Add 3 to accumulator A
+8: 0x30   OUT   0    # Display the contents of accumulator A to the output register
+
 
 ## Program Counter
 <img width="1060" height="526" alt="image" src="https://github.com/user-attachments/assets/060ed9ef-ef5d-4582-ba6b-d8e14ffa1683" />
