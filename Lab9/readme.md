@@ -8,8 +8,8 @@
 
 I thought this project would need slightly less modules than it actually needed.  Below is what I thought it would look like:
 
-![IMG_0343](https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9)
 
+<img width="1080" height="587" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
 
 Original functional block diagram
 
