@@ -41,10 +41,10 @@ it times out if there hasn't been a pulse.
 
 ![VideoToGif_GIF (3)](https://github.com/user-attachments/assets/e1df7f29-4197-40c5-9995-1016c869d3e1)
 
+Debugging the module
+
 This module does a range conversion and passes an 11 bit value in centimeters. Most of this 11 bits will not be used, as most returns are within the maximum pulse width 18 ms (36 ms if no return
 pulse is detected)
-
-Debugging the module
 
 ## Moving average filter
 
@@ -56,7 +56,17 @@ is still jumpy. This is where the moving average filter helps.
 The one implemenmted here is a 5 point moving average filter. I didn't experiment with longer versions, though longer filters may provide better performance. What I noticed is the "jitteryness" was 
 improved, especially noticable when the distance doesn't vary much in a short period.
 
+This module outputs a range_valid signal and the 11 bit range value, just a smoothed out one.
+
 ## Speed Converter
 
+The speed converter takes the 11 bit range value (and data_valid) and converts it to an signed 8-bit value. This module could have potentially been combined with the next module, as both are relatively simple, 
+but it is simpler to think about.
 
+## Speed to Steps
+
+What can a module do alone with a 8-bit signed value for motor control?  You can control a motor, but there must be some element that creates a varying time value. This module does that by converting the
+signed value into a time-based pulse, and also a '1' or '0' value which determines direction.
+
+## Full-Step 
 
