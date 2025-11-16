@@ -39,8 +39,5 @@ In hindsight, I noticed the HC-SR04 newer versions are 3.3V compliant, unlike ol
 This module uses a finite state machine to characterize the return pulse. It determines whether or not there is a pulse, or the line is idle, and detects rising and falling edges. Lastly,
 it times out if there hasn't been a pulse.
 
-
-![VideoToGif_GIF (2)](https://github.com/user-attachments/assets/3c5181fb-7d8e-4a2d-8e7b-b62412316ef8)
-
-
+![VideoToGif_GIF (3)](https://github.com/user-attachments/assets/e1df7f29-4197-40c5-9995-1016c869d3e1)
 
