@@ -11,6 +11,9 @@ I thought this project would need slightly less modules than it actually needed.
 
 <img width="500" height="600" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
 
+
+<img width="500" height="600" alt="img_0344" src="https://github.com/user-attachments/assets/17a3a9d0-9886-45f4-a716-54b348c93f17" />
+
 Original functional block diagram
 
 
