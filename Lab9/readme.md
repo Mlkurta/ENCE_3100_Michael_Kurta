@@ -3,6 +3,8 @@
 
 ![VideoToGif_GIF (2)](https://github.com/user-attachments/assets/8c5b8f18-8274-4f24-ac27-20f794650d1f)
 
+Final working demo. The LEDs represent a signed value from -128 to 127, zero-centered at 55, which I left from debugging.
+
 This device uses an ultrasonic sensor for real-time short-range distance measurement. The measurement calculates the range by the time of flight for the sound pressure
 waves to return. When the distance is calculated, the required direction and velocity of the turn is calculated. If the range is between 10-54 cm, the motor spins clockwise
 at a speed proportional to the distance from 55.  At a range of 55 cm, the motor stops completely. Lastly, the motor spins counter-clockwise proportional to the distance
