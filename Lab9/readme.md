@@ -75,5 +75,7 @@ signed value into a time-based pulse, and also a '1' or '0' value which determin
 
 ## Full-Step 28-BYJ-48
 
-This module is like a driver module for a specific stepper motor. It's a common stepper motor found in many Arduino kits. I looked online for a good step sequence, and I opted for a full-step sequence. I had identified a problem, though, when first testing out the motor: that the speed and direction seemed to be random. 
+This module is like a driver module for a specific stepper motor. It's a common stepper motor found in many Arduino kits. I looked online for a good step sequence, and I opted for a full-step sequence. I had identified a problem when first testing out the motor: that the speed and direction seemed to be random. 
+
+After some frustration with debugging I'd began to wonder if the motor timing sequence was correct. I dug a little bit deeper and found a different suggestion for the sequence and tried it. It turns out that this was the fix.
 
