@@ -41,6 +41,9 @@ it times out if there hasn't been a pulse.
 
 ![VideoToGif_GIF (3)](https://github.com/user-attachments/assets/e1df7f29-4197-40c5-9995-1016c869d3e1)
 
+This module does a range conversion and passes an 11 bit value in centimeters. Most of this 11 bits will not be used, as most returns are within the maximum pulse width 18 ms (36 ms if no return
+pulse is detected)
+
 Debugging the module
 
 ## Moving average filter
@@ -49,5 +52,11 @@ Ultrasound detection abilities decay repidly with distance, and especially so ag
 is still jumpy. This is where the moving average filter helps.
 
 <img width="540" height="95" alt="image" src="https://github.com/user-attachments/assets/08830d1a-3ba2-4b67-814b-605dec88202b" />
+
+The one implemenmted here is a 5 point moving average filter. I didn't experiment with longer versions, though longer filters may provide better performance. What I noticed is the "jitteryness" was 
+improved, especially noticable when the distance doesn't vary much in a short period.
+
+## Speed Converter
+
 
 
