@@ -88,6 +88,8 @@ After some frustration with debugging I'd began to wonder if the motor timing se
 On their own, data cannot be just displayed to the seven segment displays. Individual digits need to have specific pins mapped to the segments. On top of this, binary data (base 2) is not inherently
 compatible with normal base 10 (BCD) digits. Base 2 works well with Base 16 (Hexadecimal), but we want the digits to carry when the individual digit turns from 9 to 0, not 15 to 0. This is what the binary to 16 bit converter does. It performs a process called the "double dabbler" algorithm. This involves a series of checks and left shifting of the bits and then adding 4 to the result.
 
+This module recieves a 16-bit value, whose range is plenty more than we need for this project. It has outputs for 5 digits (max 99999) but all that was used was the least significant 3 digits, so the values were just truncated.
+
 ## BCD 7 Segment
 
 This module is nothing more than a simple connecting of wires to the required ports, such that when any number is entered as a value, they are mapped to the correct pins on the 7 segment display to show the correct number.
