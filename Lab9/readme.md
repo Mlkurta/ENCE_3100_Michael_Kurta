@@ -8,15 +8,11 @@
 
 I thought this project would need slightly less modules than it actually needed.  Below is what I thought it would look like:
 
-
-<img width="500" height="600" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
-
-
 <img width="500" height="600" alt="img_0344" src="https://github.com/user-attachments/assets/17a3a9d0-9886-45f4-a716-54b348c93f17" />
 
 Original functional block diagram
 
-
+<img width="500" height="600" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
 
 High level setep: (This is not difficult to predict).  I needed a voltage divider to drop the return echo of the Ultrasonic rage sensor 
 from 5V to ~3V, using a 1K ohm / 1.5k ohm setp.
@@ -44,4 +40,14 @@ This module uses a finite state machine to characterize the return pulse. It det
 it times out if there hasn't been a pulse.
 
 ![VideoToGif_GIF (3)](https://github.com/user-attachments/assets/e1df7f29-4197-40c5-9995-1016c869d3e1)
+
+Debugging the module
+
+## Moving average filter
+
+Ultrasound detection abilities decay repidly with distance, and especially so against non-planar targets. The HC-SR04 has internal amplification and filtering, and yet the pulse data, updating at 10 Hz 
+is still jumpy. This is where the moving average filter helps.
+
+<img width="540" height="95" alt="image" src="https://github.com/user-attachments/assets/08830d1a-3ba2-4b67-814b-605dec88202b" />
+
 
