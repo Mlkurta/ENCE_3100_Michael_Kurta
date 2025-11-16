@@ -3,6 +3,11 @@
 
 ![VideoToGif_GIF (2)](https://github.com/user-attachments/assets/8c5b8f18-8274-4f24-ac27-20f794650d1f)
 
+This device uses an ultrasonic sensor for real-time short-range distance measurement. The measurement calculates the range by the time of flight for the sound pressure
+waves to return. When the distance is calculated, the required direction and velocity of the turn is calculated. If the range is between 10-54 cm, the motor spins clockwise
+at a speed proportional to the distance from 55.  At a range of 55 cm, the motor stops completely. Lastly, the motor spins counter-clockwise proportional to the distance
+between 55 and 100. But there is no more increase in speed at ranges beyond 100 cm.
+
 
 ## Original Block Diagram
 
@@ -68,5 +73,7 @@ but it is simpler to think about.
 What can a module do alone with a 8-bit signed value for motor control?  You can control a motor, but there must be some element that creates a varying time value. This module does that by converting the
 signed value into a time-based pulse, and also a '1' or '0' value which determines direction.
 
-## Full-Step 
+## Full-Step 28-BYJ-48
+
+This module is like a driver module for a specific stepper motor. It's a common stepper motor found in many Arduino kits. I looked online for a good step sequence, and I opted for a full-step sequence. I had identified a problem, though, when first testing out the motor: that the speed and direction seemed to be random. 
 
