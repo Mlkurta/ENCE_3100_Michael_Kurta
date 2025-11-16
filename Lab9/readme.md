@@ -26,7 +26,7 @@ from 5V to ~3V, using a 1K ohm / 1.5k ohm setp.
 
 Original functional diagram.
 
-<img width="1080" height="587" alt="block_diag_final" src="https://github.com/user-attachments/assets/1b3e3ab9-fcf8-43b9-af4b-47d276afabbf" />
+<img width="1082" height="617" alt="image" src="https://github.com/user-attachments/assets/22fb8b1a-083a-4f8d-8d72-6e47d8d3a565" />
 
 Final block diagram
 
