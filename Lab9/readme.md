@@ -9,7 +9,7 @@
 I thought this project would need slightly less modules than it actually needed.  Below is what I thought it would look like:
 
 
-<img width="1080" height="1200" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
+<img width="500" height="600" alt="img_0343" src="https://github.com/user-attachments/assets/7ed2f0b2-7093-4ea3-adda-be7bb14705a9" />
 
 Original functional block diagram
 
