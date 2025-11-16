@@ -17,8 +17,6 @@ Original functional block diagram
 High level setep: (This is not difficult to predict).  I needed a voltage divider to drop the return echo of the Ultrasonic rage sensor 
 from 5V to ~3V, using a 1K ohm / 1.5k ohm setp.
 
-![IMG_0344](https://github.com/user-attachments/assets/26e0e200-b331-40e3-b42e-a1375bf1ee63)
-
 Original functional diagram.
 
 <img width="1080" height="587" alt="block_diag_final" src="https://github.com/user-attachments/assets/1b3e3ab9-fcf8-43b9-af4b-47d276afabbf" />
